@@ -1,3 +1,4 @@
+using BethanysPieShop.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,6 +15,9 @@ namespace BethanysPieShop
             //These service injection add support for MVC
             services.AddControllersWithViews();
             services.AddMvc();
+
+            services.AddScoped<ICategoryRepository, MockCategoryRepository>();
+            services.AddScoped<IPieRepository, MockPieRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
