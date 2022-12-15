@@ -31,3 +31,7 @@ C:\Users\EnmanuelGonzalezLiri\Desktop\ASP Net Core MVC Course\My Personal Projec
 C:\Users\EnmanuelGonzalezLiri\Desktop\ASP Net Core MVC Course\My Personal Project\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\BethanysPieShop.genruntimeconfig.cache
 C:\Users\EnmanuelGonzalezLiri\Desktop\ASP Net Core MVC Course\My Personal Project\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\BethanysPieShop.csproj.CopyComplete
 C:\Users\EnmanuelGonzalezLiri\Desktop\ASP Net Core MVC Course\My Personal Project\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\Razor\Views\Pie\List.cshtml.g.cs
+C:\Users\EnmanuelGonzalezLiri\Desktop\ASP Net Core MVC Course\My Personal Project\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\EnmanuelGonzalezLiri\Desktop\ASP Net Core MVC Course\My Personal Project\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\EnmanuelGonzalezLiri\Desktop\ASP Net Core MVC Course\My Personal Project\BethanysPieShop\BethanysPieShop\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\EnmanuelGonzalezLiri\Desktop\ASP Net Core MVC Course\My Personal Project\BethanysPieShop\BethanysPieShop\bin\Debug\net5.0\libman.json

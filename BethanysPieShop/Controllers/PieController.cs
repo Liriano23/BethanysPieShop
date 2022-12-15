@@ -24,7 +24,7 @@ namespace BethanysPieShop.Controllers
 
         public ViewResult List()
         {
-            PieListViewModel listViewModel = new PieListViewModel();
+            PiesListViewModel listViewModel = new PiesListViewModel();
             listViewModel.Pies = _pieRepository.AllPies;
             listViewModel.CurrentCategory = "Cheese Cakes";
             return View(listViewModel);
