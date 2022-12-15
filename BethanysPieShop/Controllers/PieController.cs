@@ -17,11 +17,6 @@ namespace BethanysPieShop.Controllers
             _categoryRepository = categoryRepository;
         }
 
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
-
         public ViewResult List()
         {
             PiesListViewModel listViewModel = new PiesListViewModel();
