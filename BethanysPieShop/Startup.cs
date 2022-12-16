@@ -25,11 +25,15 @@ namespace BethanysPieShop
                 options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             //These service injection add support for MVC
-            services.AddControllersWithViews();
-            services.AddMvc();
-
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IPieRepository, PieRepository>();
+
+            services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
+
+            services.AddHttpContextAccessor();
+            services.AddSession();
+
+            services.AddControllersWithViews();//services.AddMvc(); would also work still
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,8 +44,9 @@ namespace BethanysPieShop
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection(); //This middleware component redirect HTTP request to HTTPS
-            app.UseStaticFiles(); //This middleware component let my application use static files (Images, JS, CSS, ETC)
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseSession();
 
             app.UseRouting();
 
